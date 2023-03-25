@@ -46,11 +46,13 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  background-image: url('img/download.png');
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  background-size: contain; /* adjust size to fit button */
+  width: 100px;
+  height: 100px;
 }
 
 .saveBtn i:hover {
