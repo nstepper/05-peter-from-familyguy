@@ -1,15 +1,13 @@
-(function () {
-  // Listener for click events on the save button
-  $(".saveBtn").on("click", function () {
+// click event for the save button
+$(".saveBtn").on("click", function () {
 
-    console.log("what is going on?")
-    //debug
-    alert("I'm here");
     // Get the user input
     var description = $(this).siblings(".description").val().trim();
-    // Get the id of the containing time-block
-    var id = $(this).parent().attr("id");
-    // Save the user input in local storage
+    // Get the id of the user input textarea
+    const element = document.querySelector('.description');
+    const id = element.id;
+    
+     // Save the user input in local storage
     localStorage.setItem(id, description);
   });
 
@@ -49,4 +47,4 @@
 
   // Update the hour classes every minute
   setInterval(updateHourClasses, 60000);
-});
+
