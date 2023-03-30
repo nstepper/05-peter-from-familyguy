@@ -60,9 +60,7 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-/* styles.css */
-.clicked {
+.saved {
   background-color: green;
-  color: white;
 }
 
